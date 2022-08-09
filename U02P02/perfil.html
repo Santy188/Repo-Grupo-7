@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form  action="mailto:micorreo@servidor.com" method="post" enctype="text/plain">
+        <h2>Mis Datos Personales</h2>
+        <fieldset>
+        <legend>Datos Personales</legend>
+        <p>Nombre: <input type="text" name="nombre"/> 
+        Apellido: <input type="text" name="apellido" size="25"/>
+        <p>Edad: <input type="text" name="edad" size="50"/></p>
+        <p>E-Mail: <input type="text" name="e-mail" size="35"/></p>
+        <form action="#">
+            <label for="lang">Nacionalidad</label>
+            <select name="nacionalidad" id="lang">
+              <option value="Argentina">Argentina</option>
+              <option value="Uruguay">Uruguay</option>
+              <option value="Paraguay">Paraguay</option>
+              <option value="Chile">Chile</option>
+            </select>
+            <form action="#">
+                <label for="lang">Condicion Laboral</label>
+                <select name="Condicion Laboral" id="lang">
+                  <option value="Desempleado">Desempleado</option>
+                  <option value="Busqueda Laboral">Busqueda Laboral</option>
+                  <option value="Trabajo Part Time">Trabajo Part Time</option>
+                  <option value="Trabajo Full Time">Trabajo Full Time</option>
+                </select>
+           <p>Sexo</p>
+           <input type="radio" name="sexo" value="v"/> Varón<br/>
+             <input type="radio" name="sexo" value="m"/> Mujer
+        </fieldset>	
+        <fieldset>
+        <legend>Gustos Musicales e Comidas Preferidas</legend> 
+        <p>Gustos Musicales<br/>
+           <input type="radio" name="estudios" value="1" checked="checked"/>Rock<br/>
+             <input type="radio" name="estudios" value="2"/> Regueton<br/>
+             <input type="radio" name="estudios" value="3"/> Cumbia <br/>
+             <input type="radio" name="estudios" value="4"/> Electronica<br/>
+             <input type="radio" name="estudios" value="5"/> Trap</p>
+        <p>Comidas Preferidas<br/>
+            <input type="checkbox" name="Pizza"/> Pizza<br/>
+            <input type="checkbox" name="Hamburguesa"/> Hamburguesa<br/>
+            <input type="checkbox" name="Milanesa"/> Milanesa<br/>
+            <input type="checkbox" name="Ravioles"/> Ravioles<br/>
+            <input type="checkbox" name="Ñoquis"/> Ñoquis</p>
+        </fieldset>
+        <fieldset>
+    
+        <p>Enviar formulario por correo electronico: Al pulsar en el botón se abrirá la pagina
+           de envío de correo: en esa página pulsa en enviar:</p>
+        <p><input type="Submit" value="Enviar por correo"/></p>
+        </fieldset>
+        </form>
+        
+</body>
+</html>
