@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        table,
+        td,
+        th 
+        {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 5px;
+        }
+        table 
+        {
+            width: 100%;
+        }
+    </style>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Unidad</th>
+            <th>Producto</th>
+            <th>Precio</th>
+            <th>Subtotal</th>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>Celulares</td>
+            <td>$50000</td>
+            <td>$500000</td>
+        </tr>
+        <tr>
+            <td>50</td>
+            <td>Cargadores</td>
+            <td>$5000</td>
+            <td>$250000</td>
+        </tr>
+        <tr>
+            <td>20</td>
+            <td>Memorias</td>
+            <td>$10000</td>
+            <td>$200000</td>
+        </tr>
+    </table>
+    <hr>
+    <table>
+        <thead>
+            <tr>
+                <th>Empresa</th>
+                <th colspan="2">Producto / Vida Util</th>
+                <th>Precio</th>
+                <th>Pagina de la Empresa</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="2">Samsung</th>
+                <th>Audifinos</th>
+                <th>5 años</th>
+                <th>$20000</th>
+                <th rowspan="2"><a href="http://google.com" target="_blanck">ConsultasSamsung</a></th>
+            </tr>
+            <tr>
+                <th>Samsung galaxi</th>
+                <th>15 años</th>
+                <th>$80000</th>
+            </tr>
+            <tr>
+                <th rowspan="2">LG</th>
+                <th>Televisor</th>
+                <th>15 años</th>
+                <th>$100000</th>
+                <th rowspan="2"><a href="http://google.com" target="_blanck">ConsultasLG</a></th>
+            </tr>
+            <tr>
+                <th>Lavarropas</th>
+                <th>20 años</th>
+                <th>$200000</th>
+            </tr>
+            <tr>
+                <th rowspan="2">Sony</th>
+                <th>Joystick</th>
+                <th>10 años</th>
+                <th>$25000</th>
+                <th rowspan="2"><a href="http://google.com" target="_blanck">ConsultasSony</a></th>
+            </tr>
+            <th>Camara</th>
+            <th>15 años</th>
+            <th>$280000</th>
+        </tbody>
+    </table>
+</body>
+</html>
