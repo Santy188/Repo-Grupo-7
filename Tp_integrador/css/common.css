@@ -68,7 +68,7 @@ main {
     overflow: auto;
     padding: 16px;
     padding-bottom: 60px;
-    height: calc(100% - 120px);
+    height: calc (100% - 120px);
 }
 
 h1 {
