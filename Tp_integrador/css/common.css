@@ -18,6 +18,15 @@ body {
     width: 100%;
 }
 
+.card{
+    border-style: outset; border-radius: 15px;
+    border-width: 1px;
+    box-shadow: 0px 1px 10px;
+    text-align: center;
+    margin-top: 20px;
+    padding: 25px;
+}
+
 ul {
     list-style: none;
     padding: 0;
@@ -30,11 +39,28 @@ a {
     -webkit-user-select: none;
 }
 
+.btnconsultar{
+    background-color: #00594c;
+    border: 2px solid #00594c;
+    border-radius: 6px;
+    color: white;
+    width: 100px;
+    height: 40px;
+}
+
+select{
+    border-radius: 6px;
+    width: 200px;
+    height: 40px;
+}
+
 header {
     position: fixed;
     top: 0;
     width: 100%;
-    background: var(--color-theme);
+    background: var(--color-gradient);
+    border-radius: 0px 0px 25px 25px;
+    box-shadow: 0px 2px #5df2d6;
 }
 
 nav>ul {
@@ -101,11 +127,12 @@ main section {
 footer {
     position: fixed;
     bottom: 0px;
-    background: var(--color-theme);
+    background: var(--color-gradient);
     width: 100%;
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
+    box-shadow: 0px -2px #5df2d6;
 }
 
 footer p {
