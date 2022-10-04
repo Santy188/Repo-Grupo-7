@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clima App</title>
     <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/pages/help.css">
     <link rel="icon" href="img/3767036.png">
 </head>
 
@@ -29,18 +30,26 @@
         <p>Para poder consultar el clima, primero deberá <a href="add-city.html" target=”_blank”>Agregar una ciudad</a> 
         y luego seleccionar la Ciudad en cuestion desde la pagina <a href="index.html" target=”_blank”>Clima</a></p>
         <section>
-            <form action="">
+            <form action="" id="formulario">
                 <label for="nombre">Nombre:</label>
+                <br>
                 <input type="text"><br>
                 <label for="mail">Email:</label>
+                <br>
                 <input type="email" required><br>
                 <label for="mensaje">Mensaje:</label>
-                <textarea name="" id="" cols="30" rows="10"></textarea><br>
-                <input type="reset" value="Limpiar">
-                <input type="submit">
+                <br>
+                <textarea name="" id="" cols="35" rows="10"></textarea><br>
+                <div>
+                    <button>Limpiar</button>
+                    <button type="text">Enviar</button>
+                </div>
             </form>
         </section>
-        <section id="section-weather-result">
+        <section id="mail">
+            <ul>
+                <li style="background-color: rgb(220, 52, 68);" class="xd">Ingrese un Email válido</li>
+            </ul>
         </section>
     </main>
     <footer>

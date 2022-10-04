@@ -1,0 +1,25 @@
+#formulario > input, #formulario > div {
+    width: 300px;
+    height: 35px;
+    text-align: center;
+}
+
+
+#formulario > div > button{
+    background-color: #00594c;
+    border: 2px solid #00594c;
+    border-radius: 6px;
+    color: white;
+    width: 70px;
+    height: 35px;
+}
+
+#mail > ul > li{
+    text-align: center;
+    border-radius: 10px;
+    color: aliceblue;
+    padding: 9px;
+    margin: 40px;
+    width: 400px;
+    height: 45px;
+}

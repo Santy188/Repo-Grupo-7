@@ -63,6 +63,7 @@ nav li a {
     font-size: 1em;
     font-weight: bold;
     color: var(--color-active);
+    border-radius: 10px 10px 0px 0px;
 }
 
 nav li.current-page a {
