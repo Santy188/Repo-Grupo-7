@@ -23,7 +23,7 @@ function agregarCiudadLocalStorage(){
     let ciudadNueva = validarInput();
 
     loaderAgregar.style.display = "block";
-    setTimeout(function myfunction() { loaderAgregar.style.display = "none" }, 1000);
+    setTimeout(function myfunction() { loaderAgregar.style.display = "none" }, 2000);
     if(ciudadNueva != 1) {
         ciudades.push(ciudadNueva);
         localStorage.setItem("CIUDADES", JSON.stringify(ciudades));
@@ -44,7 +44,7 @@ function validarInput(){
     }
     if(ciudades.includes(nombreCiudad.value)){
         resultado = false;
-        setTimeout(function myfunction() { mensajeRepetido.style.display = "block" }, 1200);
+        setTimeout(function myfunction() { mensajeRepetido.style.display = "block" }, 2000);
         setTimeout(function myfunction() { mensajeRepetido.style.display = "none" }, 2000);
     }
     if (resultado){
@@ -65,7 +65,7 @@ async function validarAPI() {
         const respuesta = await fetch('https://api.openweathermap.org/data/2.5/weather?q=' + nombreCiudad.value + '&appid=c2175e7292294a8a624f2d44ac9fe691');
         const datos = await respuesta.json()
         if(datos.cod==404){
-            setTimeout(function myfunction() { mensajeError.style.display = "block" }, 1200);
+            setTimeout(function myfunction() { mensajeError.style.display = "block" }, 2000);
             setTimeout(function myfunction() { mensajeError.style.display = "none" }, 2000);
         }
         else{
@@ -75,7 +75,7 @@ async function validarAPI() {
         }
     }
     catch (error) {
-        setTimeout(function myfunction() { mensajeError.style.display = "block" }, 1200);
+        setTimeout(function myfunction() { mensajeError.style.display = "block" }, 2000);
         setTimeout(function myfunction() { mensajeError.style.display = "none" }, 2000);
 
     }

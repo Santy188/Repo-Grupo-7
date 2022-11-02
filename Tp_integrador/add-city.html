@@ -30,26 +30,26 @@
         <section>
             <form >
                 <label for="ingresoCiudad"> Ingresar la ciudad a agregar:</label> 
-                <br>
+                <br><br>
                 <input id="ingresoCiudad" type="text" name="Ciudad" />
-                <br>
+                <br><br>
                 <button type="button" id="btnagregar" onclick="validarAPI()">Agregar</button>
             </form>
         </section>
-        <section id="section-button">
+        <section class="section-button">
             <div id="message-success">
-                <p>Ciudad Cargada con exito</p>
-            </div>
-            <div id="message-error">
-                <p>Error: La ciudad cargada no se encuentra en la API o se produjo un error al consultar.</p>
-            </div>
-            <div id="message-repeat">
-                <p>La ciudad ingresada ya se encuentra almacenada.</p>
-            </div>
-        </section>
-        <div id="loaderAgregar">
-            <div class="loader"></div>
-        </div>
+                 <p>Ciudad cargada con éxito.</p>
+             </div>
+             <div id="message-error">
+                 <p>Error: La ciudad cargada no se encuentra en la API o se produjo un error al consultar.</p>
+             </div>
+             <div id="message-repeat">
+                 <p>La ciudad ingresada ya se encuentra almacenada.</p>
+             </div>
+         </section>
+         <div id="loaderAgregar">
+             <div class="loader"></div>
+         </div>
     </main>
     <footer>
         <p>

@@ -1,17 +1,51 @@
-.card{
-    border-style: outset; border-radius: 15px;
+div.card {
+
+    display: none;
+
+    border-style: outset;
+    border-radius: 15px;
     border-width: 1px;
     box-shadow: 0px 1px 10px;
     text-align: center;
     margin-top: 20px;
     padding: 25px;
+
 }
 
-.btnconsultar{
-    background-color: #00594c;
-    border: 2px solid #00594c;
-    border-radius: 6px;
+div.card p {
+    font-size: small;
+}
+
+div.card:last-child {
+    margin-bottom: 0px;
+}
+
+.form-index select {
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.form-index input {
     color: white;
-    width: 100px;
-    height: 40px;
+    padding: 10px;
+    border-radius: 10px;
+    border-color: transparent;
+    background-color: var(--color-theme);
+}
+
+div#ciudadInexistente {
+    display: none;
+}
+
+div#ciudadInexistente p {
+    background: #ffc107;
+    padding: 15px;
+    color: white;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+#loaderCard {
+    display: none;
 }
