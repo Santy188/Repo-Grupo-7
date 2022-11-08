@@ -1,23 +1,22 @@
+
 form{
     text-align: center;
 }
 
-#entrada{
-    width: 250px;
-    height: 40px;
-    border-style: solid;
-    border-color: black;
-    border-radius: 6px;
-    margin: 10px 10px 10px 10px;
+#ingresoCiudad{
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    padding: 10px;
 }
 
-.btnagregar{
+#btnagregar{
     background-color: #00594c;
     border: 2px solid #00594c;
     border-radius: 6px;
     color: white;
     width: 80px;
-    height: 35px;
+    height: 40px;
 }
 
 #resultado > ul > li{
@@ -28,4 +27,44 @@ form{
     margin: 40px;
     width: 70%;
     margin-left: 130px;
+}
+
+.section-button {
+    margin: 20px;
+}
+
+.section-button div {
+    padding: 10px;
+    margin: 15px;
+    width: 400px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.section-button div p {
+    color: white;
+}
+
+#message-success {
+    background-color: #28a745; 
+    height: 50px;
+    padding-top: 15px;
+    display: none;
+}
+
+#message-error {
+    background-color: #dc3545;
+    height: 55px;
+    display: none;
+}
+
+#message-repeat {
+    background-color: #ffc107;
+    height: 55px;
+    display: none;
+}
+
+
+#loaderAgregar {
+    display: none;
 }

@@ -32,27 +32,27 @@
         <p>Para poder consultar el clima, primero deberá <a href="add-city.html" target=”_blank”>Agregar una ciudad</a> 
         y luego seleccionar la Ciudad en cuestion desde la pagina <a href="index.html" target=”_blank”>Clima</a></p>
         <section>
-            <form id="contact-form">
+            <form id="contact-form" class="formulario">
                 <input type="hidden" name="contact_number">
                 <label for="nombre">Nombre:</label>
                 <br>
-                <input type="text" name="user-name"><br>
+                <input type="text" name="user-name" id="user-name"><br>
                 <label for="mail">Email:</label>
                 <br>
-                <input type="email" name="user_email" required><br>
+                <input type="email" name="user_email" id="email"><br>
                 <label for="mensaje">Mensaje:</label>
                 <br>
-                <textarea name="message" id="" cols="35" rows="10"></textarea><br>
+                <textarea name="message" cols="35" rows="10" id="mensaje"></textarea><br>
                 <div>
-                    <button>Limpiar</button>
+                    <button id="enviar" onclick="limpiar()">Limpiar</button>
                     <!--<button type="text">Enviar</button>-->
-                    <input type="submit" value="Send">
+                    <input type="submit" value="Send" id="enviar">
                 </div>
             </form>
         </section>
         <section id="mail">
             <ul>
-                <li style="background-color: rgb(220, 52, 68);" class="xd">Ingrese un Email válido</li>
+                <!--<li style="background-color: rgb(220, 52, 68);">Ingrese un mail valido</li>-->
             </ul>
         </section>
     </main>

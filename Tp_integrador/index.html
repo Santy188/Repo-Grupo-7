@@ -8,12 +8,13 @@
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/pages/index.css">
     <link rel="icon" href="img/3767036.png">
+    <script src="js/pages/index.js" defer></script>
 </head>
 
 <body>
     <header>
         <h1>
-            <span><img src="img/3767036.png" alt="" width="30" height="30">    Clima App</span>
+            <span><img src="img/3767036.png" alt="" width="30" height="30"> Clima App</span>
         </h1>
         <nav>
             <ul>
@@ -26,25 +27,31 @@
     <main>
         <h2>El Clima Ahora</h2>
         <section id="form-city-list">
-            <form action="">
-            <select name="Region" id="lang">
-                <option value="" - disabled - selected>Seleccionar Ciudad</option>
-                <option value="Rosario">Rosario</option>
-                <option value="Rafaela">Rafaela</option>
-            </select>
-            <input class="btnconsultar" type="submit" value="Consultar" />
+            <form class="form-index">
+                <label for="SeleccionarCuidad"></label>
+                <select name="Region" id="SeleccionarCiudad">
+                    <option value="" - disabled - selected>Seleccionar Ciudad</option>
+                </select>
+                <input class="btnconsultar" type="button" value="Consultar" id="Consultar" />
             </form>
         </section>
         <section id="section-weather-result">
-        <div class="card">
-            <h3>Rosario</h3>
-            <img src="http://openweathermap.org/img/wn/01d@2x.png" alt="">
-            <p>Temperatura: 25.31°</p>
-            <p>Sensación térmica: 24.65°</p>
-            <p>Humedad: 29%</p>
-            <p>Velocidad del viento: 4.63km/h</p>
-            <p>Presión: 1011 P</p>
-        </div>
+            <div id="loaderCard">
+                <div class="loader"></div>
+            </div>
+            <div class="card" id="card">
+                <h3 id="nombreCiudad"></h3>
+                <img src="http://openweathermap.org/img/wn/01d@2x.png" alt="" id="ClimaIcon">
+                <p id="temp"></p>
+                <p id="feels_like"></p>
+                <p id="humidity"></p>
+                <p id="wind_speed"></p>
+                <p id="pressure"></p>
+                <div id="ciudadInexistente">
+                    <p>Ciudad no encontrada/existente</p>
+                </div>
+            </div>
+            
         </section>
     </main>
     <footer>
@@ -55,3 +62,4 @@
 </body>
 
 </html>
+

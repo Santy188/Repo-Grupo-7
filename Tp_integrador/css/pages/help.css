@@ -1,4 +1,4 @@
-#formulario > input, #formulario > div {
+.formulario > input, #formulario > div {
     width: 300px;
     height: 35px;
     text-align: center;
@@ -22,4 +22,14 @@
     margin: 40px;
     width: 400px;
     height: 45px;
+}
+
+#enviar {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 90px;
+    background-color: var(--color-theme);
+    border-color: transparent;
+    color: white;
 }
